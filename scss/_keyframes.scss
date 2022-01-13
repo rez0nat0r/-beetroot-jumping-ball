@@ -1,0 +1,29 @@
+@keyframes dws-bounce {
+    0% {
+        bottom: 100%;
+    }
+    25% {
+        bottom: 0; width: 100px; height: 100px; background: #cc3f85;
+    }
+    30% {
+        bottom: 0; width: 110px; height: 25px; background: red;
+    }
+    35% {
+        bottom: 0; width: 100px; height: 100px;
+    }
+    70% {
+        bottom: 100%; background: #cc3f85;
+    }
+    100% {
+        bottom: 100%;
+    }
+}
+
+@keyframes dws-moveLeft {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100%;
+    }
+}

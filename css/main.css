@@ -1,0 +1,126 @@
+@-webkit-keyframes dws-bounce {
+  0% {
+    bottom: 100%;
+  }
+  25% {
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    background: #cc3f85;
+  }
+  30% {
+    bottom: 0;
+    width: 110px;
+    height: 25px;
+    background: red;
+  }
+  35% {
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+  }
+  70% {
+    bottom: 100%;
+    background: #cc3f85;
+  }
+  100% {
+    bottom: 100%;
+  }
+}
+
+@keyframes dws-bounce {
+  0% {
+    bottom: 100%;
+  }
+  25% {
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    background: #cc3f85;
+  }
+  30% {
+    bottom: 0;
+    width: 110px;
+    height: 25px;
+    background: red;
+  }
+  35% {
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+  }
+  70% {
+    bottom: 100%;
+    background: #cc3f85;
+  }
+  100% {
+    bottom: 100%;
+  }
+}
+
+@-webkit-keyframes dws-moveLeft {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes dws-moveLeft {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font: normal 400 15px/1.3 "Impact", "Arial Narrow Bold", sans-serif;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 20px;
+  background: #76b4b3;
+}
+
+.ball {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #cc3f85;
+  border-radius: 100%;
+  -webkit-animation: dws-bounce 3s linear infinite, dws-moveLeft 25s linear infinite;
+          animation: dws-bounce 3s linear infinite, dws-moveLeft 25s linear infinite;
+}
+
+.footer {
+  background: #19504f;
+  padding: 25px;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */
